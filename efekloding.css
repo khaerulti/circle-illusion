@@ -1,0 +1,98 @@
+body {
+  background: #000;
+}
+.loding {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-top: 60px;
+}
+.loding div {
+  position: absolute;
+  border: 10px solid rgb(213, 6, 6);
+  border-radius: 50%;
+  animation: lodingdiv 1s ease-in-out infinite;
+}
+.loding div:nth-child(2) {
+  animation-delay: -0.8s;
+  border: rgb(7, 250, 84) solid 10px;
+}
+.loding div:nth-child(3) {
+  animation-delay: -0.6s;
+  border: rgb(160, 8, 210) solid 10px;
+}
+.loding div:nth-child(4) {
+  animation-delay: -0.4s;
+  border: rgb(6, 37, 240) solid 10px;
+}
+@keyframes lodingdiv {
+  from {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+  }
+  to {
+    opacity: 1;
+    width: 0;
+    height: 0;
+  }
+}
+
+.loding div:nth-child(5) {
+  animation-delay: -0.18s;
+  height: 500px;
+  width: 500px;
+  border: rgb(245, 245, 245) solid 10px;
+}
+.loding div:nth-child(6) {
+  animation-delay: -0.16s;
+  height: 500px;
+  width: 500px;
+  border: rgb(234, 255, 6) solid 10px;
+}
+.loding div:nth-child(7) {
+  animation-delay: -0.14s;
+  height: 500px;
+  width: 500px;
+  border: rgb(255, 255, 255) solid 10px;
+}
+.loding div:nth-child(8) {
+  animation-delay: -0.1s;
+  height: 500px;
+  width: 500px;
+  border: rgb(4, 209, 255) solid 10px;
+}
+.loding span {
+  position: absolute;
+  border: 10px solid white;
+  border-radius: 50%;
+  animation: loder 1s ease-in-out infinite;
+}
+
+.loding span:nth-child(2) {
+  animation-delay: -0.8s;
+  border: rgb(7, 153, 250) solid 10px;
+}
+.loding span:nth-child(3) {
+  animation-delay: -0.6s;
+  border: rgb(210, 8, 8) solid 10px;
+}
+.loding span:nth-child(4) {
+  animation-delay: -0.4s;
+  border: rgb(232, 240, 6) solid 10px;
+}
+@keyframes loder {
+  from {
+    opacity: 1;
+    width: 0;
+    height: 0;
+  }
+  to {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
